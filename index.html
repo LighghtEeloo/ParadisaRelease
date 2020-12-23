@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+    <script src="preload.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico">
+    <title>Paradisa</title>
+</head>
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <script>
+        // Preload all images.
+        window.onload = preload;
+        // Elm app
+        var app = Elm.Main.init({
+            node: document.getElementById('root'),
+            flags: Date.now()
+        });
+        // Edit the volume of the music
+        app.ports.changeVolume.subscribe(
+            (id, vol) => {
+                if (! vol === null) {
+                    document.getElementById(id).volume = vol;
+                }
+            }
+        )
+    </script>
+</body>
+</html>
