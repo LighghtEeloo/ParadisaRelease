@@ -3,6 +3,8 @@
 [![Version](https://img.shields.io/badge/Version-1.0.0-success.svg)](http://focs.ji.sjtu.edu.cn:2143/projects/team-18/repository)
 [![Status](https://img.shields.io/badge/Status-Release-success.svg)](http://focs.ji.sjtu.edu.cn:2143/projects/team-18/repository)
 
+Please visit [here](https://lighghteeloo.github.io/ParadisaRelease/) with a desktop device to play : )
+
 *Paradisa* is the heroine's a girls' name. 
 
 > According to *thinkbabynames.com*,
